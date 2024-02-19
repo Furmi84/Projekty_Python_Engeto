@@ -29,7 +29,6 @@ def prihlaseni_do_systemu ():
     if zadane_heslo == uzivatele[zadane_jmeno]:
       print (f"Prihlaseni probehlo uspesne. Vitej {zadane_jmeno}")
       vykresleni_dekorace()
-      #print ("Prihlaseni probehlo uspesne")
       return True
     else:
       print ("Prihlaseni je neuspesne")
