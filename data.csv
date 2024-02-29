@@ -1,0 +1,7 @@
+Leakage_locked;Leakage_unlocked;PhaserAngle;ShiftingTime_unlocking;ShiftingTime_locking;DynamicUnlockingPressure;MinimumWorkingPressure;TestPressure;LockingClearance1;TestTemperature_LC;TestTemperature_DUP;TestTemperature_MWP;TestTemperature_PA
+0.228;0.216;20.83;0.256;0.271;0.557;0.055;3.01;0.88;30.0;30.0;30.0;30.0
+0.22;0.22;20.82;0.22;0.22;0.52;0.02;3.02;0.82;30.2;30.2;30.2;30.2
+0.23;0.23;20.83;0.23;0.23;0.53;0.03;3.03;0.83;30.3;30.3;30.3;30.3
+0.228;0.216;20.83;0.256;0.271;0.557;0.055;3.01;0.88;30.0;30.0;30.0;30.0
+0.22;0.22;20.82;0.22;0.22;0.52;0.02;3.02;0.82;30.2;30.2;30.2;30.2
+0.23;0.23;20.83;0.23;0.23;0.53;0.03;3.03;0.83;30.3;30.3;30.3;30.3
