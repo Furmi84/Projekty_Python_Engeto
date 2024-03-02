@@ -1,20 +1,20 @@
-"""
-projekt_c2.py: druhy projekt do Engeto Online Python Akademie
+"""projekt_c2.py: druhy projekt do Engeto Online Python Akademie.
+
 author: Martin Furmanek
 email: martin.furmanek@gmail.com
 discord: Furmi84
 
 """
 
-print("Hi there!")
+print("Ahoj.")
 print("-"*100)
-print("I've generated a random 4 digit number for you.")
-print("Let's play a bulls and cows game.")
+print("Vygeneroval jsem pro tebe nahodno číslo.")
+print("Pojdmě si zahrát hru na býky a krávy")
 print("-"*100)
 
 
     
-zadane_cislo_hracem = input("Enter a number:")
+zadane_cislo_hracem = input("Zadej číslo:")
 zadane_cislo_pocitacem = "1234"
 delka_zadaneho_cisla = len(zadane_cislo_hracem)
 #print("delka zadaneho cisla",delka_zadaneho_cisla)
