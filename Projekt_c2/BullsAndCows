@@ -5,52 +5,76 @@ email: martin.furmanek@gmail.com
 discord: Furmi84
 
 """
+import os
+from random import randint
+
+os.system("cls")
 
 print("Ahoj.")
-print("-"*100)
+print("-"*50)
 print("Vygeneroval jsem pro tebe nahodno číslo.")
-print("Pojdmě si zahrát hru na býky a krávy")
-print("-"*100)
+print("Pojdmě si zahrát hru na býky a krávy.")
+print("-"*50)
+   
 
+#zadane_cislo_pocitacem = str(randint(1, 10)) + str(randint(1, 10)) + str(randint(1, 10))+str(randint(1, 10))
+zadane_cislo_pocitacem = f"{randint(1, 9)}{randint(0, 9)}{randint(0, 9)}{randint(0, 9)}"
+pocet_opakovani = 0
+
+while True:
+    zadane_cislo_hracem = input("Zadej číslo:")
+    delka_zadaneho_cisla = len(zadane_cislo_hracem)
+    #print("delka zadaneho cisla",delka_zadaneho_cisla)
+    print("-"*100)
+    print("Zadane cislo hracem",zadane_cislo_hracem)
+    print("Zadane cislo pocitacem",zadane_cislo_pocitacem)
+    #print(zadane_cislo_hracem[0])
+
+
+    # Kontrola, jestli zadaný údaj je číslo
+    if not zadane_cislo_hracem.isdigit():
+        print("zadaný údaj není číslo")
+    # Kontrola, jestli zadané číslo začíná nulou
+    elif zadane_cislo_hracem[0] == "0":
+        print("zadané číslo začíná nulou")
+    # Kontrola délky zadaného čísla
+    elif len(zadane_cislo_hracem) != 4:
+        print("zadané číslo nemá přesně 4 znaky")
+    else:
+        print("zadané číslo je validní")
 
     
-zadane_cislo_hracem = input("Zadej číslo:")
-zadane_cislo_pocitacem = "1234"
-delka_zadaneho_cisla = len(zadane_cislo_hracem)
-#print("delka zadaneho cisla",delka_zadaneho_cisla)
-print("-"*100)
-print("Zadane cislo hracem",zadane_cislo_hracem)
-print("Zadane cislo pocitacem",zadane_cislo_pocitacem)
-#print(zadane_cislo_hracem[0])
+    duplicita_znaku = 0
 
-if 3 > delka_zadaneho_cisla < 5:
-    print("zadane cislo je mensi nez 3 nebo vetsi nez 3")
-elif not zadane_cislo_hracem.isdigit():
-    print("zadaný údaj není čislo")
-elif zadane_cislo_hracem[0] == "0":
-    print("zadané čislo začiná nulou")
-duplicita_znaku = 0
+    for znak in zadane_cislo_hracem:
+#       print("Znak",znak)
+        if zadane_cislo_hracem.count(znak)>1:
+            duplicita_znaku += 1
+        if duplicita_znaku >=2:
+            print("Zadané číslo obsahuje duplicitu čisel")
 
-for znak in zadane_cislo_hracem:
-#    print("Znak",znak)
-    if zadane_cislo_hracem.count(znak)>1:
-        duplicita_znaku += 1
-if duplicita_znaku >=2:
-    print("Zadané číslo obsahuje duplicitu čisel")
-
-bulls = 0
-cows = 0
-for a in zadane_cislo_hracem:
-    for b in zadane_cislo_pocitacem:
-        if a == b:
-            if zadane_cislo_pocitacem.index(b) == zadane_cislo_hracem.index(a):
-                bulls += 1
-            else:
-                cows += 1
+    bulls = 0
+    cows = 0
+    for a in zadane_cislo_hracem:
+        for b in zadane_cislo_pocitacem:
+            if a == b:
+                if zadane_cislo_pocitacem.index(b) == zadane_cislo_hracem.index(a):
+                    bulls += 1
+                else:
+                    cows += 1
         
+    text_bulls = "bulls " if bulls >= 2 else "bull "
+    text_cows = "cows " if cows >= 2 else "cows "
 
-print("bulls",bulls)
-print("cows",cows)    
+    print(f"{text_bulls}{bulls}, {text_cows}{cows}")
+
+    if bulls == 4:
+        pocet_opakovani += 1
+        print(f"Skvěle vyhral jsi. Počet opakovani je {pocet_opakovani}")
+        exit()
+    else:
+        pocet_opakovani += 1
+   
 
 
      
