@@ -11,7 +11,7 @@ def vykresleni_dekorace():
   pocet = 50
   print (znak * pocet)
 
-def prihlaseni_do_systemu ():
+def prihlaseni_do_systemu():
 
   uzivatele = {
     "bob": "123",
