@@ -8,7 +8,7 @@ discord: Furmi84
 import os
 from random import randint
 
-os.system("cls")
+#os.system("cls")
 
 print("Ahoj.")
 print("-"*50)
@@ -25,7 +25,7 @@ while True:
     zadane_cislo_hracem = input("Zadej číslo:")
     delka_zadaneho_cisla = len(zadane_cislo_hracem)
     #print("delka zadaneho cisla",delka_zadaneho_cisla)
-    print("-"*100)
+    print("-"*50)
     print("Zadane cislo hracem",zadane_cislo_hracem)
     print("Zadane cislo pocitacem",zadane_cislo_pocitacem)
     #print(zadane_cislo_hracem[0])

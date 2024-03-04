@@ -87,7 +87,7 @@ if prihlaseni_do_systemu():
          tento regularni vyraz filtruje pouze slova ... viz 'the', 'valley'"""
     jen_slova = zadany_text.split()
     # rozdeli slova pouze podle mezer, nechava tecky u slov ... viz  'the', 'valley.'
-    print(jen_slova)
+    #print(jen_slova)
     velikost_jen_slova = len(jen_slova)
     cislice_v_textu = re.findall(r'\d+', zadany_text)
     vykresleni_dekorace()
@@ -108,5 +108,6 @@ if prihlaseni_do_systemu():
         for znak in jen_slova:
             if len(znak) == index:
                 pocet_slov += 1
-        print("{:^5}|{:<20}|{:^10}|".format(index, "*"*pocet_slov, pocet_slov))
+        if pocet_slov != 0:
+            print("{:^5}|{:<20}|{:^10}|".format(index, "*"*pocet_slov, pocet_slov))
     vykresleni_dekorace()
