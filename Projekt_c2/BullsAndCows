@@ -16,10 +16,17 @@ print("Vygeneroval jsem pro tebe nahodno číslo.")
 print("Pojdmě si zahrát hru na býky a krávy.")
 print("-"*50)
    
+zadane_cislo_pocitacem = "0"
+# zadane_cislo_pocitacem = str(randint(1, 10)) + str(randint(1, 10)) + str(randint(1, 10))+str(randint(1, 10))
+for index in range(0,4):
+    zadane_cislo_pocitacem += str(randint(1, 9)) 
 
-#zadane_cislo_pocitacem = str(randint(1, 10)) + str(randint(1, 10)) + str(randint(1, 10))+str(randint(1, 10))
-zadane_cislo_pocitacem = f"{randint(1, 9)}{randint(0, 9)}{randint(0, 9)}{randint(0, 9)}"
+print(zadane_cislo_pocitacem)
+
+# zadane_cislo_pocitacem = f"{randint(1, 9)}{randint(0, 9)}{randint(0, 9)}{randint(0, 9)}"
 pocet_opakovani = 0
+
+os.system("cls")
 
 while True:
     zadane_cislo_hracem = input("Zadej číslo:")
@@ -30,7 +37,6 @@ while True:
     print("Zadane cislo pocitacem",zadane_cislo_pocitacem)
     #print(zadane_cislo_hracem[0])
 
-
     # Kontrola, jestli zadaný údaj je číslo
     if not zadane_cislo_hracem.isdigit():
         print("zadaný údaj není číslo")
@@ -40,9 +46,6 @@ while True:
     # Kontrola délky zadaného čísla
     elif len(zadane_cislo_hracem) != 4:
         print("zadané číslo nemá přesně 4 znaky")
-    else:
-        print("zadané číslo je validní")
-
     
     duplicita_znaku = 0
 
