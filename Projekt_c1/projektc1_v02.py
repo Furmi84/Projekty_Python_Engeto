@@ -65,17 +65,23 @@ def prihlaseni_do_systemu():
         vykresleni_dekorace()
         return True
     else:
-        print("Prihlaseni je neuspesne, ukončuji program")
+        print("Prihlaseni je neuspesne, ukončuji program.\n")
         exit()
 
 
 if prihlaseni_do_systemu():
 
-    volba_textu = int(input("Zvol si text, 1,2 a nebo 3? "))
-    if 0 < volba_textu < 4:
-        zadany_text = TEXTS[volba_textu]
+    volba_textu = input("Zvol si text, 1,2 a nebo 3? ")
+
+    if volba_textu.isdigit():
+        volba_textu_cislo = int(volba_textu)
+        if 0 < volba_textu_cislo < 4:
+            zadany_text = TEXTS[volba_textu_cislo]
+        else:
+            print("Tvá volba zvoleneho textu je mimo rozsah. Ukončuji program.")
+            exit()
     else:
-        print("Tvá volba zvoleneho textu je mimo rozsah")
+        print("Zadaná volba není číslo. Ukončuji program.")
         exit()
 
     vykresleni_dekorace()
