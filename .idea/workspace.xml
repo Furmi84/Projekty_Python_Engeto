@@ -4,13 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="446724ac-2322-43a3-b563-4c101ab7c490" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Projekt_c2/BullsAndCows.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Projekt_c2/BullsAndCows_v2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ruzna_cviceni/Ukladej_slova.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ruzna_cviceni/kalkulacka.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projekt_c2/BullsAndCows" beforeDir="false" />
+    <list default="true" id="446724ac-2322-43a3-b563-4c101ab7c490" name="Changes" comment="Uprava Kodu">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,10 +15,24 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 0
-}]]></component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Furmi84&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="cb59fa22-efff-417b-be19-7c6e3a7d7b1c" />
+        <option name="url" value="https://github.com/Furmi84/Projekty_Python_Engeto.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 0
+}</component>
   <component name="ProjectId" id="2dgY3lZs5gNa8kS0YqztyiNphR4" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -37,7 +46,13 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/MartinFurmanek/PycharmProjects/Projekty_Python_Engeto/Projekt_c2"
+    "last_opened_file_path": "C:/Users/MartinFurmanek/PycharmProjects/Projekty_Python_Engeto/Ruzna_cviceni",
+    "settings.editor.selected.configurable": "preferences.toDoOptions"
+  },
+  "keyToStringList": {
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "Python"
+    ]
   }
 }]]></component>
   <component name="RecentsManager">
@@ -64,6 +79,27 @@
       <option name="presentableId" value="Default" />
       <updated>1710430991239</updated>
     </task>
+    <task id="LOCAL-00001" summary="Uprava Kodu">
+      <option name="closed" value="true" />
+      <created>1710444593036</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1710444593036</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Uprava Kodu">
+      <option name="closed" value="true" />
+      <created>1710444626903</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1710444626903</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Uprava Kodu" />
+    <option name="LAST_COMMIT_MESSAGE" value="Uprava Kodu" />
   </component>
 </project>
