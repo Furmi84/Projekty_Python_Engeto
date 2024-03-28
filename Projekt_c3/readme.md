@@ -1,0 +1,1 @@
+Hokus pokus cerny les je to tady a ty bez

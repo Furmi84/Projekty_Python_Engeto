@@ -1,24 +1,22 @@
-byci = 0
-kravy = 0
+# Prázdný řetězec, do kterého budeme přidávat znaky
+retezec = "Ahoj svete"
+novy_list = list(retezec)
+# Seznam znaků, které chceme přidat do řetězce
+znaky_pridat = ['A', 'h', 'o', 'j', ' ', 's', 'v', 'ě', 't', 'e']
+novy_retezec = ""
 
-hrac = "1234"
-pocitac = "5201"
+# Cyklus pro průchod seznamem znaků a jejich přidání do řetězce
+for znak in sorted(retezec):
+    print(znak)
+    novy_retezec += znak
 
-"""for a in hrac:
-    for b in pocitac:
-        if a == b:
-            if pocitac.index(b) == hrac.index(a):
-                byci += 1
-            else:
-                kravy += 1"""
+print(novy_retezec)
 
-for x in range(len(hrac)):
-    print(f"{x=}")
-    if hrac[x] == pocitac[x]:
-        byci +=1
-    elif hrac[x] in pocitac:
-        kravy +=1
+for i in range(0,len(novy_list)):
+    print(novy_list[i])
+    novy_list[i+1]=novy_list[i]
+    print(novy_list[i])
 
-print(f"{byci=}{kravy=}")
-#byci = sum(s == g for s, g in zip(pocitac, hrac))
-#kravy = sum(min(hrac.count(x), pocitac.count(x)) for x in set(hrac)) - byci
+print(novy_list)
+
+
